@@ -26,18 +26,16 @@
       <file leaf-file-name="functions.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="5" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
-              <folding>
-                <marker date="1411364599363" expanded="false" signature="1192:1202" placeholder="..." />
-              </folding>
+            <state line="18" column="5" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="969">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="7" selection-start="860" selection-end="860" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="442">
+            <state line="19" column="7" selection-start="852" selection-end="852" vertical-scroll-proportion="0.3596882" vertical-offset="0" max-vertical-offset="898">
               <folding />
             </state>
           </provider>
@@ -55,63 +53,7 @@
       <file leaf-file-name="MainView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/MainView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="582" column="0" selection-start="30411" selection-end="30411" vertical-scroll-proportion="-7.8461537" vertical-offset="9690" max-vertical-offset="23562">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OpcionesCierre.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/OpcionesCierre.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="27" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1700">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Unidades.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/Unidades.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="21" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1819">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonalAsignado.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/PersonalAsignado.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="29" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Localizaciones.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/Localizaciones.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="20" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1819">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FactoresConversion.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/view/FactoresConversion.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="38" selection-start="626" selection-end="626" vertical-scroll-proportion="0.42316017" vertical-offset="0" max-vertical-offset="1819">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2080" column="30" selection-start="53676" selection-end="53676" vertical-scroll-proportion="0.0" vertical-offset="34589" max-vertical-offset="35513">
+            <state line="213" column="55" selection-start="8817" selection-end="8817" vertical-scroll-proportion="0.0" vertical-offset="1632" max-vertical-offset="23341">
               <folding />
             </state>
           </provider>
@@ -171,6 +113,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -223,7 +166,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -320,29 +262,34 @@
     <entry file="file://$PROJECT_DIR$/app/functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="5" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
-          <folding>
-            <marker date="1411364599363" expanded="false" signature="1192:1202" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2080" column="30" selection-start="53676" selection-end="53676" vertical-scroll-proportion="0.0" vertical-offset="34589" max-vertical-offset="35513">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="9" selection-start="30" selection-end="94" vertical-scroll-proportion="0.018398268" vertical-offset="0" max-vertical-offset="924">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="7" selection-start="860" selection-end="860" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="442">
+        <state line="20" column="7" selection-start="860" selection-end="860" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/ParametrosGenerales.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3383">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/MainView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="582" column="0" selection-start="30400" selection-end="30400" vertical-scroll-proportion="0.0" vertical-offset="9894" max-vertical-offset="31314">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="5" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
           <folding />
         </state>
       </provider>
@@ -356,51 +303,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="18" selection-start="334" selection-end="334" vertical-scroll-proportion="0.31277058" vertical-offset="0" max-vertical-offset="924">
-          <folding />
-        </state>
+        <state line="17" column="18" selection-start="334" selection-end="334" vertical-scroll-proportion="0.31277058" vertical-offset="0" max-vertical-offset="924" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/MainView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="582" column="0" selection-start="30411" selection-end="30411" vertical-scroll-proportion="-7.8461537" vertical-offset="9690" max-vertical-offset="23562">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/OpcionesCierre.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1700">
+        <state line="213" column="55" selection-start="8817" selection-end="8817" vertical-scroll-proportion="0.0" vertical-offset="1632" max-vertical-offset="23341">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/Unidades.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="21" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1819">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/PersonalAsignado.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="29" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/Localizaciones.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="20" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1819">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/FactoresConversion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="38" selection-start="626" selection-end="626" vertical-scroll-proportion="0.42316017" vertical-offset="0" max-vertical-offset="1819">
+        <state line="19" column="7" selection-start="852" selection-end="852" vertical-scroll-proportion="0.3596882" vertical-offset="0" max-vertical-offset="898">
           <folding />
         </state>
       </provider>
