@@ -17,6 +17,7 @@ Ext.create('Ext.form.Panel', {
                 {
                     xtype: 'filefield',
                     anchor: '100%',
+                    name:'maestroProducto',
                     fieldLabel: 'Archivo origen',
                     buttonText: 'Abrir...'
                 },
@@ -34,6 +35,7 @@ Ext.create('Ext.form.Panel', {
                 {
                     xtype: 'filefield',
                     anchor: '100%',
+                    name:'maestroStock',
                     fieldLabel: 'Archivo origen',
                     buttonText: 'Abrir...'
                 },
@@ -51,6 +53,7 @@ Ext.create('Ext.form.Panel', {
                 {
                     xtype: 'filefield',
                     anchor: '100%',
+                    name:'maestroValor',
                     fieldLabel: 'Archivo origen',
                     buttonText: 'Abrir...'
                 },
@@ -68,6 +71,7 @@ Ext.create('Ext.form.Panel', {
                 {
                     xtype: 'filefield',
                     anchor: '100%',
+                    name:'maestroLectura',
                     fieldLabel: 'Archivo origen',
                     buttonText: 'Abrir...'
                 },
@@ -86,7 +90,23 @@ Ext.create('Ext.form.Panel', {
             items: [
                 {
                     xtype: 'button',
-                    text: 'Cargar'
+                    text: 'Cargar',
+                    handler: function(){
+                        var form = this.up('form').getForm();                                
+                        if(form.isValid()){
+                            form.submit({
+                                url: 'svr/src/cargarMaestros.php',
+                                waitMsg: 'Cargando el archivo...',                                                            
+                                success: function(result,request) {                        
+                                    //var obj = Ext.decode(request.responseText);                                            
+                                },
+                                failure: function(result,request){
+                                    //var obj = Ext.decode(result.responseText);
+                                }
+                            });
+
+                        };
+                    }
                 },
                 {
                     xtype: 'button',
