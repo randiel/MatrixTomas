@@ -52,13 +52,58 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainView.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainView.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/MainView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="291" column="51" selection-start="13399" selection-end="13399" vertical-scroll-proportion="0.037861917" vertical-offset="4913" max-vertical-offset="31314">
+            <state line="582" column="0" selection-start="30411" selection-end="30411" vertical-scroll-proportion="-7.8461537" vertical-offset="9690" max-vertical-offset="23562">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OpcionesCierre.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/OpcionesCierre.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="27" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1700">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Unidades.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/Unidades.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="21" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1819">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonalAsignado.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/PersonalAsignado.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="29" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Localizaciones.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/Localizaciones.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="20" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1819">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FactoresConversion.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/view/FactoresConversion.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="38" selection-start="626" selection-end="626" vertical-scroll-proportion="0.42316017" vertical-offset="0" max-vertical-offset="1819">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,7 +129,12 @@
       <list>
         <option value="$PROJECT_DIR$/bootstrap.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/app/view/FactoresConversion.js" />
+        <option value="$PROJECT_DIR$/app/view/Unidades.js" />
+        <option value="$PROJECT_DIR$/app/view/Localizaciones.js" />
         <option value="$PROJECT_DIR$/app/view/MainView.js" />
+        <option value="$PROJECT_DIR$/app/view/OpcionesCierre.js" />
+        <option value="$PROJECT_DIR$/app/view/PersonalAsignado.js" />
       </list>
     </option>
   </component>
@@ -179,6 +229,10 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -309,10 +363,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/MainView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="291" column="51" selection-start="13399" selection-end="13399" vertical-scroll-proportion="0.037861917" vertical-offset="4913" max-vertical-offset="31314">
+        <state line="582" column="0" selection-start="30411" selection-end="30411" vertical-scroll-proportion="-7.8461537" vertical-offset="9690" max-vertical-offset="23562">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/OpcionesCierre.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="27" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/Unidades.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="21" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1819">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/PersonalAsignado.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="29" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/Localizaciones.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="20" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1819">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/FactoresConversion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="38" selection-start="626" selection-end="626" vertical-scroll-proportion="0.42316017" vertical-offset="0" max-vertical-offset="1819">
+          <folding />
         </state>
       </provider>
     </entry>
