@@ -1,0 +1,15 @@
+.bar-proyecto {
+    background-color: #dfeaf2;
+}
+
+.bloquear {
+    background-image: url(../images/lock16.png);
+}
+
+.desbloquear {
+    background-image: url(../images/unlock16.png);
+}
+
+.actualizar {
+    background-image: url(../images/update16.png);
+}
