@@ -98,7 +98,8 @@ Ext.create('Ext.form.Panel', {
                                 url: 'svr/src/cargarMaestros.php',
                                 waitMsg: 'Cargando el archivo...',                                                            
                                 success: function(result,request) {                        
-                                    //var obj = Ext.decode(request.responseText);                                            
+                                    //var obj = Ext.decode(request.responseText); 
+                                    Ext.Msg.alert('Mensaje de MATRIX','La carga finalizo correctamente');
                                 },
                                 failure: function(result,request){
                                     //var obj = Ext.decode(result.responseText);

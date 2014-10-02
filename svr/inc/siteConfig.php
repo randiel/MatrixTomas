@@ -21,7 +21,7 @@ $siteConfig["copy"]			= "Copyright © 2014 BlackPrince Consulting. Todos los der
 /* ---Parámetros de la conexión a la base de datos--- */
 $siteConfig["server"]		= "localhost";
 $siteConfig["user"]			= "root";
-$siteConfig["pass"]			= "";
+$siteConfig["pass"]			= "d3v3l0p3r";
 $siteConfig["db"]			= "tomasdb";
 /* ---Parámetros de la conexión a la base de datos--- */
 

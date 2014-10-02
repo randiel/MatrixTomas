@@ -480,7 +480,7 @@ Ext.define('Matrix.view.MainView', {
                                                     xtype: 'menuitem',
                                                     text: 'Control de operaciones',
                                                     handler: function() {
-                                                        addNewTab('fg_tabpanel','fco_frmconope','');
+                                                        addNewTab('fg_tabpanel','ControlOperaciones','');
                                                     }
                                                 },
                                                 {
@@ -910,108 +910,6 @@ Ext.define('Matrix.view.MainView', {
             ]
         });        
         // Fin Formulario Generar informe de carga
-
-        // Inicio Formulario Control de operaciones
-        Ext.create('Ext.form.Panel', {
-            xtype: 'form',
-            id: 'fco_frmconope',
-            itemId: 'fco_frmconope',
-            bodyPadding: 10,
-            title: 'Control de operaciones',
-            closable: true,
-            dockedItems: [
-                {
-                    xtype: 'toolbar',
-                    dock: 'top',
-                    items: [
-                        {
-                            xtype: 'button',
-                            text: 'Nueva lectura'
-                        },
-                        {
-                            xtype: 'combobox',
-                            fieldLabel: 'Lectura actual'
-                        },
-                        {
-                            xtype: 'button',
-                            text: 'Cerrar'
-                        }
-                    ]
-                }
-            ],
-            items: [
-                {
-                    xtype: 'gridpanel',
-                    title: 'Maestro datos del cliente',
-                    columns: [
-                        {
-                            xtype: 'checkcolumn',
-                            width: 41,
-                            text: ''
-                        },
-                        {
-                            xtype: 'gridcolumn',
-                            dataIndex: 'string',
-                            text: 'Actividad',
-                            flex: 1
-                        },
-                        {
-                            xtype: 'gridcolumn',
-                            dataIndex: 'string',
-                            text: 'Fecha de ejecucion'
-                        },
-                        {
-                            xtype: 'gridcolumn',
-                            dataIndex: 'string',
-                            text: 'Hora inicio'
-                        },
-                        {
-                            xtype: 'gridcolumn',
-                            dataIndex: 'string',
-                            text: 'Hora Fin'
-                        },
-                        {
-                            xtype: 'gridcolumn',
-                            dataIndex: 'string',
-                            text: 'Tiempo transcurrido'
-                        },
-                        {
-                            xtype: 'gridcolumn',
-                            dataIndex: 'string',
-                            text: 'Estado actual'
-                        }
-                    ],
-                    dockedItems: [
-                        {
-                            xtype: 'toolbar',
-                            dock: 'top',
-                            items: [
-                                {
-                                    xtype: 'button',
-                                    text: 'Iniciar'
-                                },
-                                {
-                                    xtype: 'button',
-                                    text: 'Suspender'
-                                },
-                                {
-                                    xtype: 'button',
-                                    text: 'Finalizar'
-                                },
-                                {
-                                    xtype: 'tbfill'
-                                },
-                                {
-                                    xtype: 'button',
-                                    text: 'Actualizar'
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
-        });        
-        // Fin Formulario Control de operaciones
 
         // Inicio Formulario Asignar carga al personal
         Ext.create('Ext.form.Panel', {
