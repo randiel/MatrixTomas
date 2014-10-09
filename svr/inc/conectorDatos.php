@@ -27,7 +27,7 @@ class conectorDatos {
 
         $this->conexion->set_charset("utf-8");
         $this->conexion->query("SET NAMES 'utf-8';");
-	$this->conexion->query("SET character_set_results = 'utf-8', character_set_client = 'utf-8', character_set_connection = 'utf-8', character_set_database = 'utf-8', character_set_server = 'utf-8';");
+	    $this->conexion->query("SET character_set_results = 'utf-8', character_set_client = 'utf-8', character_set_connection = 'utf-8', character_set_database = 'utf-8', character_set_server = 'utf-8';");
 
     }
 

@@ -20,14 +20,10 @@ Ext.Loader.setConfig({
 
 
 Ext.application({
-    views: [
-        'MainView'
-    ],
-    controllers: [
-        'MainController'
-    ],
     name: 'Matrix',
-
+    views: [ 'MainView' ],
+    requires : [ 'Matrix.config.Runtime' ],
+    controllers: [ 'MainController' ],
     launch: function() {
         Ext.create('Matrix.view.MainView');
     }
