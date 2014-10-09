@@ -6,8 +6,9 @@ Ext.define("fco_MdlOpe", {
         {name: 'opekeyi'},
         {name: 'ctrseci'},
         {name: 'openamc'},
-        {name: 'opefepd'},
+        {name: 'opefpid'},
         {name: 'opehric'},
+        {name: 'opefpfd'},
         {name: 'opehrfc'},
         {name: 'opettrc'},
         {name: 'opeestc'}
@@ -69,8 +70,9 @@ Ext.create('Ext.form.Panel', {
                 {xtype: 'gridcolumn', dataIndex: 'opekeyi', text: 'Key', hidden: true},
                 {xtype: 'gridcolumn', dataIndex: 'ctrseci', text: 'Orden'}, 
                 {xtype: 'gridcolumn', dataIndex: 'openamc', text: 'Actividad', flex: 1 }, 
-                {xtype: 'gridcolumn', dataIndex: 'opefepd', text: 'Fecha de ejecucion'}, 
-                {xtype: 'gridcolumn', dataIndex: 'opehric', text: 'Hora inicio'}, 
+                {xtype: 'gridcolumn', dataIndex: 'opefpid', text: 'Fecha de inicio'},
+                {xtype: 'gridcolumn', dataIndex: 'opehric', text: 'Hora inicio'},
+                {xtype: 'gridcolumn', dataIndex: 'opefpfd', text: 'Fecha de fin'},
                 {xtype: 'gridcolumn', dataIndex: 'opehrfc', text: 'Hora Fin'}, 
                 {xtype: 'gridcolumn', dataIndex: 'opettrc', text: 'Tiempo transcurrido'}, 
                 {xtype: 'gridcolumn', dataIndex: 'opeestc', text: 'Estado actual'} 
@@ -169,8 +171,6 @@ Ext.create('Ext.form.Panel', {
                                             return false;
                                         }
                                     });
-                                    //var l_rowcod = l_grdloc.store.indexOfId(itemOpe.data.opekeyi);
-                                    //l_grdloc.selModel.select(l_rowcod, true);
                                 });
 
                             }

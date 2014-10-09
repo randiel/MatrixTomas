@@ -269,18 +269,10 @@ Ext.define('Matrix.controller.MainController', {
         loginDlg.show();
     },
 
-    onLog_btningClick: function(button, e, eOpts) {
-        Ext.getCmp('loginPanel').hide();
-        Ext.getCmp('mainPanel').show();
-    },
-
     init: function(application) {
         this.control({
             "#btnNuePro": {
                 click: this.onTapBtnNuePro
-            },
-            "#log_btning": {
-                click: this.onLog_btningClick
             }
         });
     }

@@ -8,7 +8,9 @@ Ext.define('Matrix.config.Runtime', {
         nombreAplicacion: 'Matrix Tomas',
         formularioActual: '',
         proyectoActual : 20,
-        usuarioActual: 'invitado'
+        usuarioActual: 'invitado',
+        usuarioIdActual: 0,
+        sesionActual: 0
     },
     constructor : function(config){
         this.initConfig(config);

@@ -146,42 +146,83 @@ Ext.define('Matrix.view.MainView', {
                                                 {
                                                     xtype: 'textfield',
                                                     anchor: '100%',
-                                                    id: 'log_txtusu',
-                                                    itemId: 'log_txtusu',
+                                                    name: 'log_txtusu',
                                                     fieldLabel: 'Usuario',
                                                     emptyText: 'Ingrese nombre de usuario'
                                                 },
                                                 {
                                                     xtype: 'textfield',
+                                                    inputType: 'password',
                                                     anchor: '100%',
-                                                    id: 'log_txtcon',
-                                                    itemId: 'log_txtcon',
+                                                    name: 'log_txtcon',
                                                     fieldLabel: 'Contraseña',
                                                     emptyText: 'Ingrese su contraseña'
-                                                },
-                                                {
-                                                    xtype: 'combobox',
-                                                    anchor: '100%',
-                                                    id: 'log_cmbtipusu',
-                                                    itemId: 'log_cmbtipusu',
-                                                    fieldLabel: 'Tipo de usuario',
-                                                    displayField: 'valor',
-                                                    valueField: 'codigo'
                                                 }
                                             ]
                                         },
                                         {
                                             xtype: 'checkboxfield',
                                             anchor: '100%',
-                                            id: 'log_chkrecdat',
-                                            itemId: 'log_chkrecdat',
+                                            name: 'log_chkrecdat',
                                             boxLabel: 'Recordar datos de usuario.'
                                         },
                                         {
                                             xtype: 'button',
                                             id: 'log_btning',
                                             itemId: 'log_btning',
-                                            text: 'Ingresar'
+                                            text: 'Ingresar',
+                                            handler: function(){
+                                                pars = null;
+                                                pars = new Object();
+                                                var frl_procedimiento = null;
+                                                frl_procedimiento = 'validarUsuario';
+
+                                                var frm = null;
+                                                frm = this.up('#log_frmloguse').getForm();
+
+                                                pars.p_usu = frm.findField('log_txtusu').getValue();
+                                                pars.p_con = sha1(frm.findField('log_txtcon').getValue());
+                                                pars.p_rec = frm.findField('log_chkrecdat').getValue();
+
+                                                if (isempty(pars.p_usu)) {
+                                                    Ext.Msg.alert("Mensaje de Matrix Tomas", "Ingrese su nombre de usuario.");
+                                                    return false;
+                                                }
+
+                                                if (isempty(pars.p_con)) {
+                                                    Ext.Msg.alert("Mensaje de Matrix Tomas", "Ingrese su contraseña.");
+                                                    return false;
+                                                }
+
+                                                Ext.Ajax.request({
+                                                    url: 'svr/src/ejecutarProcedimiento.php',
+                                                    method: 'GET',
+                                                    async: false,
+                                                    params : {
+                                                        'procedimiento': frl_procedimiento,
+                                                        'parametros': Ext.encode(pars)
+                                                    },
+                                                    success: function(response, request){
+                                                        var resobj = Ext.decode(response.responseText);
+                                                        if (resobj.results[0].result === '1') {
+                                                            Matrix.config.Runtime.setSesionActual(resobj.results[0].ssnkeyi);
+                                                            Matrix.config.Runtime.setUsuarioIdActual(resobj.results[0].usrkeyi);
+                                                            Matrix.config.Runtime.setUsuarioActual(pars.p_usu);
+                                                            Ext.getCmp('loginPanel').hide();
+                                                            Ext.getCmp('mainPanel').show();
+                                                        } else {
+                                                            Ext.Msg.alert("Mensaje de ERROR.", resobj.results[0].mensaje);
+                                                            return false;
+                                                        }
+
+                                                    },
+                                                    failure : function(response, request){
+                                                        Ext.Msg.alert("Mensaje de Matrix Tomas.", "No se pudo conectar al servidor.");
+                                                        return false;
+                                                    }
+                                                });
+
+                                            }
                                         }
                                     ]
                                 }
@@ -282,7 +323,45 @@ Ext.define('Matrix.view.MainView', {
                                         },
                                         {
                                             xtype: 'button',
-                                            text: 'Salir'
+                                            text: 'Salir',
+                                            handler: function(){
+
+                                                pars = null;
+                                                pars = new Object();
+                                                var frl_procedimiento = null;
+                                                frl_procedimiento = 'finalizarSesion';
+
+                                                pars.p_ssnkey = Matrix.config.Runtime.getSesionActual();
+                                                pars.p_usrkey = Matrix.config.Runtime.getUsuarioIdActual();
+
+                                                Ext.Ajax.request({
+                                                    url: 'svr/src/ejecutarProcedimiento.php',
+                                                    method: 'GET',
+                                                    async: false,
+                                                    params : {
+                                                        'procedimiento': frl_procedimiento,
+                                                        'parametros': Ext.encode(pars)
+                                                    },
+                                                    success: function(response, request){
+                                                        var resobj = Ext.decode(response.responseText);
+                                                        if (resobj.results[0].result === '1') {
+                                                            Ext.Msg.alert("Mensaje de Matrix Tomas.", resobj.results[0].mensaje);
+                                                            Matrix.config.Runtime.setSesionActual(0);
+                                                            Matrix.config.Runtime.setUsuarioIdActual(0);
+                                                            Matrix.config.Runtime.setUsuarioActual('invitado');
+                                                        } else {
+                                                            Ext.Msg.alert("Mensaje de ERROR.", resobj.results[0].mensaje);
+                                                            return false;
+                                                        }
+                                                        Ext.getCmp('mainPanel').hide();
+                                                        Ext.getCmp('loginPanel').show();
+                                                    },
+                                                    failure : function(response, request){
+                                                        Ext.Msg.alert("Mensaje de Matrix Tomas.", "No se pudo conectar al servidor.");
+                                                        return false;
+                                                    }
+                                                });
+                                            }
                                         }
                                     ]
                                 }
