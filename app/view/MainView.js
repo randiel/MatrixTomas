@@ -207,9 +207,11 @@ Ext.define('Matrix.view.MainView', {
                                                         if (resobj.results[0].result === '1') {
                                                             Matrix.config.Runtime.setSesionActual(resobj.results[0].ssnkeyi);
                                                             Matrix.config.Runtime.setUsuarioIdActual(resobj.results[0].usrkeyi);
+                                                            Matrix.config.Runtime.setNombreUsuario(resobj.results[0].usrnomc);
                                                             Matrix.config.Runtime.setUsuarioActual(pars.p_usu);
                                                             Ext.getCmp('loginPanel').hide();
                                                             Ext.getCmp('mainPanel').show();
+                                                            Ext.getCmp('main_nomUsr').setText(Matrix.config.Runtime.getNombreUsuario());
                                                         } else {
                                                             Ext.Msg.alert("Mensaje de ERROR.", resobj.results[0].mensaje);
                                                             return false;
@@ -266,7 +268,8 @@ Ext.define('Matrix.view.MainView', {
                                         },
                                         {
                                             xtype: 'splitbutton',
-                                            text: '{nombre_usuario}',
+                                            id: 'main_nomUsr',
+                                            text: Matrix.config.Runtime.getNombreUsuario(),
                                             menu: {
                                                 xtype: 'menu',
                                                 items: [

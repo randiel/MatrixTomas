@@ -9,6 +9,7 @@ Ext.define('Matrix.config.Runtime', {
         formularioActual: '',
         proyectoActual : 20,
         usuarioActual: 'invitado',
+        nombreUsuario: 'Invitado',
         usuarioIdActual: 0,
         sesionActual: 0
     },
